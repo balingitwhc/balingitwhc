@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm William</h1>
 <h3 align="center">A curious engineer and developer</h3>
 
+[My Portfolio](https://balingitwhc.github.io/balingitwhc/)
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=balingitwhc&label=Profile%20views&color=0e75b6&style=flat" alt="balingitwhc" /> </p>
 
 <!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=balingitwhc" alt="balingitwhc" /></a> </p> -->
