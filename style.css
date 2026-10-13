@@ -199,6 +199,11 @@ nav a {
     letter-spacing: 0.5px;
 }
 
+/* Gives mockup project tags a distinctive creative color */
+.visual-tag {
+    background-color: #e91e63; /* Sleek design-focused pink/magenta */
+}
+
 .category-block {
     margin-top: 3rem;
     text-align: left;
@@ -218,4 +223,26 @@ footer {
     padding: 2rem;
     font-size: 0.9rem;
     border-top: 1px solid var(--card-bg);
+}
+
+
+.project-assets {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.asset-thumb {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px dashed var(--primary-color); /* Gives a nice blueprint outline look */
+}
+
+.asset-thumb:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
