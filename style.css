@@ -1,0 +1,221 @@
+/*==================================================
+    Author: William Balingit
+==================================================*/
+
+/* Base Styles & Custom Variables */
+:root {
+    --bg-color      : #ffffff;
+    --text-color    : #333333;
+    --primary-color : #0070f3;
+    --card-bg       : #f4f4f4;
+    --header-bg     : rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] {
+    --bg-color      : #121212;
+    --text-color    : #ffffff;
+    --primary-color : #0070f3;
+    --card-bg       : #1e1e1e;
+    --header-bg     : rgba(18, 18, 18, 0.8);
+}
+
+* {
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font-family     : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition      : background-color 0.3s, color 0.3s;
+    scroll-behavior : smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color           : var(--text-color);
+    line-height     : 1.6;
+}
+
+/* Header & Nav */
+header {
+    position: fixed;
+    top             : 0;
+    width           : 100%;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    padding         : 1.5rem 10%;
+    background      : var(--header-bg);
+    backdrop-filter : blur(10px);
+    z-index         : 100;
+}
+
+nav a {
+    color           : var(--text-color);
+    text-decoration : none;
+    margin-left     : 1.5rem;
+    font-weight     : 500;
+}
+
+#theme-toggle {
+    background      : none;
+    border          : none;
+    cursor          : pointer;
+    font-size       : 1.2rem;
+    margin-left     : 1.5rem;
+}
+
+/* Hero Section */
+#hero {
+    height          : 100vh;
+    display         : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Skills Section */
+#skills {
+    padding: 5rem 10%;
+    text-align: center;
+    background-color: var(--card-bg);
+}
+
+/* Base stack layout for mobile */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Smooth layout shift into a 2x2 grid for tablet/desktop screen widths */
+@media (min-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+.skills-group {
+    background-color: var(--bg-color);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.skills-group h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--card-bg);
+    padding-bottom: 0.5rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+/* Modern responsive pill styling */
+.skill-item {
+    background-color: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .skill-item {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Projects Section */
+#projects, #contact {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.project-tag {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-block {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--card-bg);
+    padding-bottom: 0.5rem;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--card-bg);
+}
