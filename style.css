@@ -282,3 +282,60 @@ footer {
     background                  : var(--primary-color);
     border-radius               : 10px;
 }
+
+
+/* The Dark Overlay Background */
+.modal {
+    display                     : none; /* Hidden by default */
+    position                    : fixed;
+    top                         : 0;
+    left                        : 0;
+    width                       : 100%;
+    height                      : 100%;
+    background-color            : rgba(0, 0, 0, 0.6); /* Translucent black backdrop */
+    z-index                     : 1000; /* Forces it over your nav menu */
+    justify-content             : center;
+    align-items                 : center;
+}
+
+/* The Popup Box Frame */
+.modal-content {
+    background-color            : var(--bg-color);
+    color                       : var(--text-color);
+    padding                     : 2.5rem;
+    border-radius               : 12px;
+    width                       : 90%;
+    max-width                   : 650px;
+    max-height                  : 85vh; /* Prevents long text from spilling past screen limits */
+    overflow-y                  : auto; /* Adds a scrollbar to text inside the popup if needed */
+    position                    : relative;
+    box-shadow                  : 0 10px 30px rgba(0,0,0,0.3);
+    animation                   : popIn 0.3s ease-out;
+}
+
+/* Close Icon Button (X) */
+.close-modal-btn {
+    position                    : absolute;
+    top                         : 1rem;
+    right                       : 1.5rem;
+    font-size                   : 2rem;
+    cursor                      : pointer;
+}
+
+/* Clean Button Styling */
+.open-modal-btn {
+    background-color            : var(--primary-color);
+    color                       : white;
+    border                      : none;
+    padding                     : 0.6rem 1.2rem;
+    border-radius               : 5px;
+    cursor                      : pointer;
+    margin-top                  : 1rem;
+    font-weight                 : 500;
+}
+
+/* Smooth zoom entry animation */
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

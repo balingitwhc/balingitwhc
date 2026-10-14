@@ -17,7 +17,7 @@
     <header>
         <div class="logo">My Portfolio</div>
         <nav>
-            <a href="#about">About</a>
+            <!-- <a href="#about">About</a> -->
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -179,6 +179,7 @@
                 <div class="project-card">
                     <h3>Block Invaders</h3>
                     <p>A Simple Space Invader-like game test created with Love2D and Lua Scripting</p>
+                    <button class="open-modal-btn" data-modal="blockInvaders-modal">Read More 📖</button>
                     <a href="https://github.com/balingitwhc/work-samples/tree/main/Love2D" class="project-link">View Project →</a>
                 </div>
             </div>
@@ -249,6 +250,24 @@
         <p>&copy; 2026 William Balingit. Built with HTML, CSS, and JS.</p>
     </footer>
 
+    <!-- The Modal Overlay Background -->
+    <div id="blockInvaders-modal" class="modal">
+        <!-- The actual content card -->
+        <div class="modal-content">
+            <span class="close-modal-btn">&times;</span>
+            <h2>Block Invaders</h2>
+            <p>Made with Love2D Framework.</p>
+            <h3>Wireframe Concepts (Pending upload)</h3>
+            <!-- <div class="wireframe-carousel">
+                <img src="#" alt="WF 1" style="height:220px; width:auto;">
+                <img src="#" alt="WF 2" style="height:220px; width:auto;">
+            </div> -->
+            <h3>Web Playable Prototype (Pending upload)</h3>
+            <!-- <a href="#" class="project-link" target="_blank">Run Live Prototype ⚡</a> -->
+        </div>
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
