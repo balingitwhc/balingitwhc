@@ -7,6 +7,7 @@
     --bg-color                  : #ffffff;
     --text-color                : #333333;
     --primary-color             : #0070f3;
+    --secondary-color           : #E55B00;
     --card-bg                   : #f4f4f4;
     --header-bg                 : rgba(255, 255, 255, 0.8);
 }   
@@ -15,6 +16,7 @@
     --bg-color                  : #121212;
     --text-color                : #ffffff;
     --primary-color             : #0070f3;
+    --secondary-color           : #E55B00;
     --card-bg                   : #1e1e1e;
     --header-bg                 : rgba(18, 18, 18, 0.8);
 }           
